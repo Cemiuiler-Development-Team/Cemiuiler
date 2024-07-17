@@ -10,6 +10,9 @@ import de.robv.android.xposed.XposedBridge;
 
 public class XposedLogUtils {
 
+private XposedLogUtils() {
+}
+
     private static boolean isDebugVersion = BuildConfig.BUILD_TYPE.contains("debug");
     private static boolean isReleaseVersion = BuildConfig.BUILD_TYPE.contains("release");
     private static boolean isDisableDetailLog = BaseHook.mPrefsMap.getBoolean("settings_disable_detailed_log");

@@ -10,6 +10,9 @@ import com.sevtinge.cemiuiler.utils.Helpers.MethodHook;
 import de.robv.android.xposed.XposedHelpers;
 
 public class NotificationVolumeSeparateSlider {
+    private NotificationVolumeSeparateSlider() {
+    }
+    
     public static void initHideDeviceControlEntry(ClassLoader pluginLoader) {
         int notifVolumeOnResId;
         int notifVolumeOffResId;
